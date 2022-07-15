@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, papel e tesoura</title>
+    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./estilos/responsivo.css">
+</head>
+<body>
+    <h1>Pedra, papel, tesoura, lagarto e spock</h1>
+    <div class="jogo">
+
+        <div class="jogo__escolha">
+            <div class="escolha__jogador">
+               <h2>Sua escolha:</h2>
+               <select id="opcoesJogador">
+                   <option>Escolha</option>
+                   <option value="pedra">Pedra</option>
+                   <option value="papel">Papel</option>
+                   <option value="tesoura">Tesoura</option>
+                   <option value="lagarto">Lagarto</option>
+                   <option value="spock">Spock</option>
+               </select>
+
+               <div class="jogador__imagens">
+                  <img id="imagemPedra" src="./images/pedra.jpeg" alt="Pedra">
+                  <img id="imagemPapel" src="./images/papel.jpeg" alt="Papel">
+                  <img id="imagemTesoura" src="./images/tesoura.jpeg" alt="Tesoura">
+                  <img id="imagemLagarto" src="./images/lagarto.jpeg" alt="Lagarto">
+                  <img id="imagemSpock" src="./images/spock.jpeg" alt="Spock">
+               </div>
+               
+            </div>
+        
+            <div class="escolha__computador">
+               <h2>Escolha do computador:</h2>
+               <div>
+                   <span id="opcao"></span>
+               </div>
+               <div class="computador__imagens">
+                   <img id="imagemPedra2" src="./images/pedra2.jpeg" alt="Pedra">
+                   <img id="imagemPapel2" src="./images/papel2.jpeg" alt="Papel">
+                   <img id="imagemTesoura2" src="./images/tesoura2.jpeg" alt="Tesoura">
+                   <img id="imagemLagarto2" src="./images/lagarto2.jpeg" alt="Lagarto">
+                   <img id="imagemSpock2" src="./images/spock2.jpeg" alt="Spock">
+               </div>
+            </div>
+        </div>
+        
+    </div>
+    <button id="jogar" class="jogo__botao">Jogar</button>
+    <button id="jogarNovamente" class="jogo__botao">Jogar novamente</button>
+
+    <div class="jogo__resultado">
+        <p id="tesouraPapel">Tesoura corta papel</p>
+        <p id="papelPedra">Papel cobre pedra</p>
+        <p id="pedraLagarto">Pedra esmaga lagarto</p>
+        <p id="lagartoSpock">Lagarto envenena Spock</p>
+        <p id="spockTesoura">Spock derrete tesoura</p>
+        <p id="tesouraLagarto">Tesoura decapita lagarto</p>
+        <p id="lagartoPapel">Lagarto come papel</p>
+        <p id="papelSpock">Papel refuta Spock</p>
+        <p id="spockPedra">Spock vaporiza pedra</p>
+        <p id="pedraTesoura">Pedra quebra tesoura</p>
+    </div>
+
+    <footer>
+        Jogo criado por Sam Kass e Karen Bryla
+    </footer>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

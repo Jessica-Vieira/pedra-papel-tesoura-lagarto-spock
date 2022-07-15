@@ -1,0 +1,35 @@
+@media only screen and (max-width: 1030px){
+    .jogo{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 650px){
+    .jogo{
+        height: 90%;
+    }
+    .jogo__escolha{
+        display: flex;
+        flex-direction: column;
+    }
+    .escolha__jogador,.escolha__computador{
+        height: 100%;
+        width: 100%;
+        margin-top: 10px;
+    }
+    button{
+        width: 50%;
+        height: 10%;
+    }
+}
+@media only screen and (max-height: 500px){
+    h1{
+        font-size: 25px;
+    }
+    .jogador__imagens,.computador__imagens{
+        display: none;
+    }
+    .jogo__escolha{
+        display: flex;
+        align-items: center;
+    }
+}
